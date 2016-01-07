@@ -1,0 +1,74 @@
+/*
+    Global styles
+*/
+
+body {
+    font-family: 'Roboto';
+    background-color: #1C222E;
+}
+
+.container {
+    max-width: 970px;
+    background-color: $white;
+    &.horizontal {
+        max-width: 1400px;
+        width: 100%;
+    }
+}
+
+h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p, a, strong {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+em {
+    font-style: italic;
+}
+
+/*
+    Utils
+*/
+
+.small-margin {
+    margin-bottom: 5px;
+}
+
+time {
+    line-height: $inlineLabelLineHeight;
+}
+
+.relative {
+    position: relative;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.width-37 {
+    width: 37%;
+}
+.read-only-date {
+    margin-left: 30px;
+    p {
+        margin: 0;
+    }
+}

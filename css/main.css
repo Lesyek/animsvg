@@ -1,0 +1,17 @@
+/*
+    Plugins styles
+*/
+@import "css-reset/reset.css";
+@import "normalize.css";
+@import "bootstrap";
+
+/*
+    Global styles
+*/
+@import "variables.css";
+@import "utils.css";
+
+/*
+    Import components styles
+*/
+
