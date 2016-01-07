@@ -1,5 +1,13 @@
-node_modules/
+node_modules
 dist/
-dist.tar.gz
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
 .DS_Store
-npm-debug.log
