@@ -14,6 +14,8 @@ var postcssImport = require('postcss-import');
 var postcssSimpleVars = require('postcss-simple-vars');
 var postcssQuantityQueries = require('postcss-quantity-queries');
 var postcssSelectorNot = require('postcss-selector-not');
+var postcssSvg = require('postcss-svg');
+
 
 module.exports = function makeWebpackConfig(options) {
     /**
@@ -146,6 +148,9 @@ module.exports = function makeWebpackConfig(options) {
             postcssSimpleVars(),
             postcssQuantityQueries(),
             postcssSelectorNot(),
+            postcssSvg({
+                paths: ['./logos']
+            }),
         ];
     };
 
