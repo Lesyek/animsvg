@@ -26,28 +26,16 @@
     cursor: move;
     display: inline-block;
     transition: background 1s ease-in-out;
-    &.postcss {
-        background-image: svg('postcss', '[fill]: #000; [stroke]: #fff');
+
+    @each $icon, $prop in (postcss, js, react), ([fill]: #000; [stroke]: #fff, [fill]: #fff, rect[fill]: #fff; circle[fill]: #000; [stroke]: #000) {
+      &.$(icon) {
+        background-image: svg($(icon), $(prop));
         background-size: cover;
         &.reset-svg-color {
-            background-image: svg('postcss');
+            background-image: svg($(icon));
             background-size: cover;
         }
+      }
     }
-    &.js {
-        background-image: svg('js', '[fill]: #fff');
-        background-size: cover;
-        &.reset-svg-color {
-            background-image: svg('js');
-            background-size: cover;
-        }
-    }
-    &.react {
-        background-image: svg('react', "rect[fill]: #fff; circle[fill]: #000; [stroke]: #000");
-        background-size: cover;
-        &.reset-svg-color {
-            background-image: svg('react');
-            background-size: cover;
-        }
-    }
+
 }
