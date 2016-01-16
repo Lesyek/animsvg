@@ -28,6 +28,11 @@ class Home extends Component {
                         <Container />
                     </div>
 
+                    <div className="container text-center">
+                        <h1>ItLamb</h1>
+                        <div className="it-lamb"></div>
+                    </div>
+
                 </div>
         </div>;
     }

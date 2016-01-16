@@ -15,7 +15,7 @@ var postcssSimpleVars = require('postcss-simple-vars');
 var postcssQuantityQueries = require('postcss-quantity-queries');
 var postcssSelectorNot = require('postcss-selector-not');
 var postcssSvg = require('postcss-svg');
-var postcssEach = require('postcss-each')
+var postcssWriteSvg = require('postcss-write-svg')
 
 
 module.exports = function makeWebpackConfig(options) {
@@ -145,13 +145,13 @@ module.exports = function makeWebpackConfig(options) {
             }),
             fontMagician(),
             cssNested(),
-            csswring(),
             postcssQuantityQueries(),
             postcssSelectorNot(),
             postcssSvg({
                 paths: ['./logos']
             }),
-            postcssEach()
+            postcssWriteSvg(),
+            csswring()
         ];
     };
 

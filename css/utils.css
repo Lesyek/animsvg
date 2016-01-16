@@ -5,7 +5,6 @@
 body {
     font-family: 'Roboto';
 }
-
 .container {
     max-width: 970px;
     background-color: $white;
@@ -14,26 +13,21 @@ body {
         width: 100%;
     }
 }
-
 h1 {
     font-size: 32px;
     text-transform: uppercase;
     font-weight: bold;
 }
-
 h2 {
     font-size: 24px;
 }
-
 h3 {
     font-size: 18px;
 }
-
 p, a, strong {
     font-size: 14px;
     margin: 10px 0;
 }
-
 em {
     font-style: italic;
 }
@@ -45,23 +39,18 @@ em {
 .small-margin {
     margin-bottom: 5px;
 }
-
 time {
     line-height: $inlineLabelLineHeight;
 }
-
 .relative {
     position: relative;
 }
-
 .align-right {
     text-align: right;
 }
-
 .margin-top {
     margin-top: 30px;
 }
-
 .width-37 {
     width: 37%;
 }
@@ -70,4 +59,11 @@ time {
     p {
         margin: 0;
     }
+}
+.it-lamb {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    background-color: transparent;
+    background-image:  svg(itLamb);
 }

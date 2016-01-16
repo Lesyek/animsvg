@@ -10,12 +10,10 @@
     line-height: normal;
     float: left;
 }
-
 .flex-container {
     display: flex;
     justify-content: center;
 }
-
 .box {
     background-color: transparent;
     padding: 0.5rem 1rem;
@@ -26,16 +24,28 @@
     cursor: move;
     display: inline-block;
     transition: background 1s ease-in-out;
-
-    @each $icon, $prop in (postcss, js, react), ([fill]: #000; [stroke]: #fff, [fill]: #fff, rect[fill]: #fff; circle[fill]: #000; [stroke]: #000) {
-      &.$(icon) {
-        background-image: svg($(icon), $(prop));
+    &.postcss {
+        background-image: svg('postcss', '[fill]: #000; [stroke]: #fff');
         background-size: cover;
         &.reset-svg-color {
-            background-image: svg($(icon));
+            background-image: svg('postcss');
             background-size: cover;
         }
-      }
     }
-
+    &.js {
+        background-image: svg('js', '[fill]: #fff');
+        background-size: cover;
+        &.reset-svg-color {
+            background-image: svg('js');
+            background-size: cover;
+        }
+    }
+    &.react {
+        background-image: svg('react', 'rect[fill]: #fff; circle[fill]: #000; [stroke]: #000');
+        background-size: cover;
+        &.reset-svg-color {
+            background-image: svg('react');
+            background-size: cover;
+        }
+    }
 }
