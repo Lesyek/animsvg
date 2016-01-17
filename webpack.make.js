@@ -7,7 +7,6 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 var autoprefixer = require('autoprefixer');
-var csswring = require('csswring');
 var fontMagician = require('postcss-font-magician');
 var cssNested = require('postcss-nested');
 var postcssImport = require('postcss-import');
@@ -137,21 +136,21 @@ module.exports = function makeWebpackConfig(options) {
      */
     config.postcss = function(webpack) {
         return [
-            postcssImport({
-                addDependencyTo: webpack
-            }),
-            autoprefixer({
-                browsers: ['last 2 versions']
-            }),
-            fontMagician(),
-            cssNested(),
-            postcssQuantityQueries(),
-            postcssSelectorNot(),
-            postcssSvg({
-                paths: ['./logos']
-            }),
-            postcssWriteSvg(),
-            csswring()
+            // postcssImport({
+            //     addDependencyTo: webpack
+            // }),
+            // autoprefixer({
+            //     browsers: ['last 2 versions']
+            // }),
+            // cssNested(),
+            // postcssQuantityQueries(),
+            // postcssSelectorNot(),
+
+            // fontMagician(),
+            // postcssSvg({
+            //     paths: ['./logos']
+            // }),
+            // postcssWriteSvg(),
         ];
     };
 

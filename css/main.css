@@ -1,18 +1,17 @@
 /*
     Plugins styles
 */
-@import "css-reset/reset.css";
+/*@import "css-reset/reset.css";
 @import "normalize.css";
-@import "bootstrap";
+@import "bootstrap";*/
 
 /*
     Global styles
 */
-@import "variables.css";
+/*@import "variables.css";
 @import "utils.css";
-@import "dragAndDrop.css";
+@import "dragAndDrop.css";*/
 
 /*
     Import components styles
 */
-
