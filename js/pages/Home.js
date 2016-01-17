@@ -24,12 +24,14 @@ class Home extends Component {
                         <div className="panel-body text-center">Ponizej troche wiecej magii</div>
                     </div>
 
-                    <div className="container" style={{ backgroundColor: 'transparent' }}>
+                    <div className="container text-center" style={{ backgroundColor: 'transparent' }}>
+                        <h1>postcss-svg</h1>
                         <Container />
                     </div>
 
                     <div className="container text-center">
-                        <h1>ItLamb</h1>
+                        <h1>postcss-write-svg</h1>
+                        <h2>ItLamb</h2>
                         <div className="it-lamb"></div>
                     </div>
 

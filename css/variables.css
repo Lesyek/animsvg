@@ -5,24 +5,22 @@
 @svg itLamb {
     @rect {
         fill: purple;
-        stroke-width: 25;
-        stroke: black;
-        width: 150px;
-        height: 150px;
+        width: 200px;
+        height: 200px;
     }
 }
 
-@keyframes hideshow {
+@keyframes lambanimations {
     0% {
-        opacity: 1;
+        border-width: 0px;
     }
-    10% {
-        opacity: 1;
+    35% {
+        border-width: 20px;
     }
-    15% {
-        opacity: 0;
+    60% {
+        border-width: 10px;
     }
-    100% {
-        opacity: 0;
+    75% {
+        border-width: 25px;
     }
 }

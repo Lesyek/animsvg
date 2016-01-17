@@ -61,9 +61,10 @@ time {
     }
 }
 .it-lamb {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     margin: 0 auto;
-    background-color: transparent;
-    background-image:  svg(itLamb);
+    border: 0 solid black;
+    background-image: svg(itLamb);
+    animation: lambanimations 2s ease-in-out infinite;
 }
