@@ -136,21 +136,20 @@ module.exports = function makeWebpackConfig(options) {
      */
     config.postcss = function(webpack) {
         return [
-            // postcssImport({
-            //     addDependencyTo: webpack
-            // }),
-            // autoprefixer({
-            //     browsers: ['last 2 versions']
-            // }),
-            // cssNested(),
-            // postcssQuantityQueries(),
-            // postcssSelectorNot(),
-
-            // fontMagician(),
-            // postcssSvg({
-            //     paths: ['./logos']
-            // }),
-            // postcssWriteSvg(),
+            postcssImport({
+                addDependencyTo: webpack
+            }),
+            autoprefixer({
+                browsers: ['last 2 versions']
+            }),
+            cssNested(),
+            postcssQuantityQueries(),
+            postcssSelectorNot(),
+            fontMagician(),
+            postcssSvg({
+                paths: ['./logos']
+            }),
+            postcssWriteSvg(),
         ];
     };
 
