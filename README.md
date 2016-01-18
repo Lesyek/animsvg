@@ -1,6 +1,6 @@
 # Animsvg
 
-## ES6, React, Webpack, PostCSS, Bootstrap application for animate SVG files
+## ES6, React, PostCSS, Bootstrap, Webpack application for animate SVG files
 
 ### Links
 
