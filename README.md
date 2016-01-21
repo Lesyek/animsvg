@@ -4,7 +4,7 @@
 
 ### Links
 
-#### Sass Guide:
+#### Sass Guide - to compare features:
 #### http://sass-lang.com/guide
 
 #### PostCss Presentation:
