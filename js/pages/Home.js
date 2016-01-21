@@ -27,9 +27,7 @@ class Home extends Component {
 
                     <div className="container text-center">
                         <h1>postcss-write-svg</h1>
-                        {/*
-                            <h2>ItLamb</h2>
-                            */}
+                        <h2>ItLamb</h2>
                         <div className="it-lamb"></div>
                     </div>
 
