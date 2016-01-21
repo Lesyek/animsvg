@@ -5,7 +5,7 @@
 body {
     /*font-family: 'Lato';*/
     /*font-family: 'Ubuntu';*/
-    /*font-family: 'Alegreya Sans';*/
+    font-family: 'Alegreya Sans';
 }
 .container {
     max-width: 970px;
